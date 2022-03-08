@@ -1719,6 +1719,7 @@ GameObject:
   - component: {fileID: 3943253059713933446}
   - component: {fileID: 3472775742868108464}
   - component: {fileID: 2847051073908146034}
+  - component: {fileID: 5598789971002134383}
   m_Layer: 0
   m_Name: 10Enemy
   m_TagString: Untagged
@@ -1747,6 +1748,7 @@ GameObject:
   - component: {fileID: 3212935190771786152}
   - component: {fileID: 3034963705386923422}
   - component: {fileID: 4444311304135851612}
+  - component: {fileID: 6313335959915023937}
   m_Layer: 0
   m_Name: 30Enemy
   m_TagString: Untagged
@@ -2105,6 +2107,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 388463664881914357}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &5598789971002134383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388463664881914357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 784ce39247ea72fab983ca2282389665, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  count: 0
+  period: 0
 --- !u!114 &6306434716467121915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2127,6 +2143,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2255043298472988891}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &6313335959915023937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2255043298472988891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 784ce39247ea72fab983ca2282389665, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  count: 0
+  period: 0
 --- !u!1 &6636842995584181529
 GameObject:
   m_ObjectHideFlags: 0
@@ -2140,6 +2170,7 @@ GameObject:
   - component: {fileID: 8054665860222276714}
   - component: {fileID: 7588304840049311836}
   - component: {fileID: 9150212669100985246}
+  - component: {fileID: 9150212669100985247}
   m_Layer: 0
   m_Name: 20Enemy
   m_TagString: Untagged
@@ -2264,6 +2295,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 784ce39247ea72fab983ca2282389665, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  count: 0
+  period: 0.1
 --- !u!114 &9150212669100985246
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2278,3 +2311,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 0}
   shottingOffset: {fileID: 0}
+--- !u!114 &9150212669100985247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6636842995584181529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 784ce39247ea72fab983ca2282389665, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  count: 0
+  period: 0
