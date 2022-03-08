@@ -12,19 +12,22 @@ public class HighScore : MonoBehaviour
     void Start()
     {
 	    TextMeshProUGUI high_score_text = GetComponent<TextMeshProUGUI>();
-            high_score_text.SetText("HIGH SCORE: 0000");
-	    highScore = PlayerPrefs.GetInt("highscore");
+            high_score_text.SetText("HIGH SCORE: hello");
+	    highScore = PlayerPrefs.GetInt("highscore2");
     }
 
     // Update is called once per frame
     void Update()
     {
 	    TextMeshProUGUI high_score_text = GetComponent<TextMeshProUGUI>();
-	    Debug.Log(highScore);
+
+
 	    if(Score.score > highScore)
 	    {
 		    highScore = Score.score;
 	    }
+
+
 
 	    if(highScore < 10)
 	    {
@@ -38,8 +41,12 @@ public class HighScore : MonoBehaviour
 	    {
 		    high_score_text.SetText("HIGH SCORE: 0" + highScore.ToString());
 	    }
+	    else
+	    {
+		    high_score_text.SetText("HIGH SCORE:" + highScore.ToString());
+	    }
 	    
-	    PlayerPrefs.SetInt("highscore", highScore);
+	    PlayerPrefs.SetInt("highscore2", highScore);
         
     }
 }
