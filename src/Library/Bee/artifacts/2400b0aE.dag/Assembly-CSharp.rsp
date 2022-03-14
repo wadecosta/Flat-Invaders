@@ -363,6 +363,7 @@
 -r:"Library/Bee/artifacts/2400b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/2400b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/Bullet.cs"
+"Assets/Scripts/Credits.cs"
 "Assets/Scripts/E10damage.cs"
 "Assets/Scripts/E20damage.cs"
 "Assets/Scripts/E30damage.cs"
@@ -370,6 +371,7 @@
 "Assets/Scripts/EnemyMovement.cs"
 "Assets/Scripts/ErandDamage.cs"
 "Assets/Scripts/HighScore.cs"
+"Assets/Scripts/MainMenu.cs"
 "Assets/Scripts/Player.cs"
 "Assets/Scripts/Score.cs"
 -langversion:9.0
