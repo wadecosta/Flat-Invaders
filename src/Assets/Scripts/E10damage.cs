@@ -12,9 +12,6 @@ public class E10damage : MonoBehaviour
 
     public Rigidbody2D shot;
 
-    public Animator explosion;
-
-    public string explosionString = "BOOM!";
 
 
     // Start is called before the first frame update
@@ -52,6 +49,5 @@ public class E10damage : MonoBehaviour
             Score.score += 10;
             Destroy(this.gameObject);
 
-	    //explosion.Play(explosion.String, 0, 0.0f);
     }
 }

@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class TriggerEnemy : MonoBehaviour
 {
+    public Animator enemy;
+    public string enemyDeath = "Enemy_Death";
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +17,10 @@ public class TriggerEnemy : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+	    enemy.Play(enemyDeath, 0, 0.0f);
     }
 }

@@ -9,12 +9,14 @@ public class Player : MonoBehaviour
   public float speed = 5f;
 
   public AudioSource bulletSound;
+  public AudioSource deathSound;
 
   public Transform shottingOffset;
 
     void Start()
     {
 	    bulletSound = GetComponent<AudioSource>();
+	    deathSound = GetComponent<AudioSource>();
     }
     // Update is called once per frame
     void Update()
@@ -45,6 +47,7 @@ public class Player : MonoBehaviour
     {
 	    Destroy(gameObject);
 	    MainMenu.PlayCredits();
+	    deathSound.Play();
 
     }
 }
